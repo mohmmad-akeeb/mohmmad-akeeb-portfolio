@@ -1,0 +1,1 @@
+export { KaggleIcon } from './KaggleIcon';

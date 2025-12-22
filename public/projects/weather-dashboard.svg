@@ -1,0 +1,38 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0f172a"/>
+  <rect x="50" y="50" width="700" height="350" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="70" y="70" width="660" height="50" rx="4" fill="#0f172a"/>
+  <rect x="90" y="85" width="120" height="20" rx="4" fill="#64748b"/>
+  <rect x="600" y="80" width="80" height="30" rx="15" fill="#3b82f6"/>
+  
+  <!-- Current Weather Card -->
+  <rect x="90" y="140" width="300" height="180" rx="8" fill="#334155"/>
+  <circle cx="150" cy="190" r="25" fill="#fbbf24"/>
+  <rect x="190" y="170" width="80" height="25" rx="4" fill="#64748b"/>
+  <rect x="190" y="205" width="120" height="15" rx="4" fill="#94a3b8"/>
+  <rect x="190" y="230" width="100" height="12" rx="4" fill="#94a3b8"/>
+  
+  <!-- Temperature -->
+  <text x="150" y="270" text-anchor="middle" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="32" font-weight="bold">24°</text>
+  <text x="240" y="280" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="14">Sunny</text>
+  
+  <!-- Forecast Cards -->
+  <rect x="420" y="140" width="120" height="80" rx="6" fill="#334155"/>
+  <circle cx="480" cy="165" r="12" fill="#94a3b8"/>
+  <text x="480" y="195" text-anchor="middle" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="14">22°</text>
+  <text x="480" y="210" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">Tomorrow</text>
+  
+  <rect x="560" y="140" width="120" height="80" rx="6" fill="#334155"/>
+  <circle cx="620" cy="165" r="12" fill="#6b7280"/>
+  <text x="620" y="195" text-anchor="middle" fill="#f1f5f9" font-family="Arial, sans-serif" font-size="14">19°</text>
+  <text x="620" y="210" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">Wed</text>
+  
+  <!-- Chart Area -->
+  <rect x="420" y="240" width="260" height="80" rx="6" fill="#334155"/>
+  <polyline points="440,300 460,285 480,290 500,275 520,280 540,265 560,270 580,255 600,260 620,245 640,250 660,235" 
+            stroke="#3b82f6" stroke-width="2" fill="none"/>
+  
+  <text x="400" y="420" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="16" font-weight="600">Weather Dashboard</text>
+</svg>

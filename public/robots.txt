@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mohammad-akeeb-portfolio.vercel.app/sitemap.xml
+
+# Disallow crawling of API routes
+Disallow: /api/
+
+# Allow crawling of resume
+Allow: /resume.pdf
