@@ -1,17 +1,17 @@
 import { ResearchPaper } from '@/types';
 
 export const researchPapers: ResearchPaper[] = [
-  {
-    id: 'paper-1',
-    title: 'Optimizing React Performance Through Advanced Memoization Techniques',
-    authors: ['John Doe', 'Jane Smith', 'Dr. Michael Johnson'],
-    publication: 'Journal of Web Development Research',
-    year: 2024,
-    abstract: 'This paper explores advanced memoization techniques in React applications, analyzing the performance impact of various optimization strategies including React.memo, useMemo, and useCallback. Our research demonstrates significant performance improvements in large-scale applications through strategic implementation of these techniques.',
-    url: 'https://example.com/papers/react-memoization-2024',
-    doi: '10.1000/182',
-    tags: ['React', 'Performance', 'Memoization', 'Web Development'],
-  },
+  // {
+  //   id: 'paper-1',
+  //   title: 'Optimizing React Performance Through Advanced Memoization Techniques',
+  //   authors: ['John Doe', 'Jane Smith', 'Dr. Michael Johnson'],
+  //   publication: 'Journal of Web Development Research',
+  //   year: 2024,
+  //   abstract: 'This paper explores advanced memoization techniques in React applications, analyzing the performance impact of various optimization strategies including React.memo, useMemo, and useCallback. Our research demonstrates significant performance improvements in large-scale applications through strategic implementation of these techniques.',
+  //   url: 'https://example.com/papers/react-memoization-2024',
+  //   doi: '10.1000/182',
+  //   tags: ['React', 'Performance', 'Memoization', 'Web Development'],
+  // },
   // {
   //   id: 'paper-2',
   //   title: 'Machine Learning Approaches to Automated Code Review in JavaScript Applications',

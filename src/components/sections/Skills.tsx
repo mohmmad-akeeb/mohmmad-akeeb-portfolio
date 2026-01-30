@@ -36,11 +36,11 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
       SK
     </div>
   ),
-  
+
   // Data & Analytics
   sql: Database,
   powerbi: BarChart3,
-  
+
   // Web Frameworks
   flask: () => (
     <div className="w-8 h-8 bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
@@ -48,18 +48,109 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
     </div>
   ),
   fastapi: Zap,
-  
+
   // Database
   mongodb: () => (
     <div className="w-8 h-8 bg-gradient-to-br from-green-600 to-green-700 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
       M
     </div>
   ),
-  
+
   // Tools
   git: GitBranch,
   docker: Container,
   aws: Cloud,
+
+  // New Skills - AI/ML & Data Science
+  huggingface: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      HF
+    </div>
+  ),
+  rag: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      RAG
+    </div>
+  ),
+  agenticai: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-lg flex items-center justify-center text-white text-[10px] font-bold shadow-lg leading-tight text-center px-1">
+      AI
+    </div>
+  ),
+  pandas: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-indigo-800 to-purple-900 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      Pd
+    </div>
+  ),
+  numpy: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      Np
+    </div>
+  ),
+  matplotlib: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      Mpl
+    </div>
+  ),
+  seaborn: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      Sb
+    </div>
+  ),
+  plotly: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      Pl
+    </div>
+  ),
+  bokeh: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-orange-300 to-orange-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      Bk
+    </div>
+  ),
+  ml: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-pink-500 to-rose-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      ML
+    </div>
+  ),
+  dl: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      DL
+    </div>
+  ),
+
+  // New Skills - Web
+  react: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      Re
+    </div>
+  ),
+  streamlit: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-700 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      St
+    </div>
+  ),
+  javascript: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      JS
+    </div>
+  ),
+
+  // New Skills - Other
+  java: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-red-600 to-red-800 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+      Jv
+    </div>
+  ),
+  dsa: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-gray-600 to-gray-800 rounded-lg flex items-center justify-center text-white text-[10px] font-bold shadow-lg text-center leading-tight">
+      DSA
+    </div>
+  ),
+  algorithms: () => (
+    <div className="w-8 h-8 bg-gradient-to-br from-slate-600 to-slate-800 rounded-lg flex items-center justify-center text-white text-[10px] font-bold shadow-lg text-center leading-tight">
+      Algo
+    </div>
+  ),
 };
 
 // Category colors for better organization
@@ -81,14 +172,14 @@ const proficiencyLabels = {
 
 function SkillIcon({ iconName, skillName, category }: { iconName: string; skillName: string; category: string }) {
   const IconComponent = iconMap[iconName];
-  
+
   if (IconComponent) {
     return <IconComponent className="w-8 h-8 text-primary" />;
   }
-  
+
   // Enhanced fallback with category-based colors
   const gradientClass = categoryColors[category as keyof typeof categoryColors] || categoryColors.other;
-  
+
   return (
     <div className={`w-8 h-8 bg-gradient-to-br ${gradientClass} rounded-lg flex items-center justify-center text-white text-sm font-bold shadow-lg`}>
       {skillName.charAt(0).toUpperCase()}
@@ -127,14 +218,14 @@ function SkillCard({ skill, index }: { skill: typeof skills[0]; index: number })
       <div className="relative p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300 shadow-sm hover:shadow-lg overflow-hidden">
         {/* Background gradient on hover */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        
+
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center text-center space-y-4">
           {/* Icon */}
           <div className="p-3 rounded-xl bg-muted/50 group-hover:bg-primary/10 transition-colors duration-300">
             <SkillIcon iconName={skill.icon} skillName={skill.name} category={skill.category} />
           </div>
-          
+
           {/* Skill Name */}
           <div className="space-y-2">
             <h3 className="font-semibold text-foreground text-sm leading-tight">
@@ -144,7 +235,7 @@ function SkillCard({ skill, index }: { skill: typeof skills[0]; index: number })
               {proficiencyLabels[skill.proficiency as keyof typeof proficiencyLabels]}
             </span>
           </div>
-          
+
           {/* Proficiency Bar */}
           <div className="w-full space-y-1">
             <ProficiencyBar level={skill.proficiency} />
@@ -154,7 +245,7 @@ function SkillCard({ skill, index }: { skill: typeof skills[0]; index: number })
             </div>
           </div>
         </div>
-        
+
         {/* Category badge */}
         <div className="absolute top-3 right-3">
           <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${categoryColors[skill.category as keyof typeof categoryColors] || categoryColors.other}`} />

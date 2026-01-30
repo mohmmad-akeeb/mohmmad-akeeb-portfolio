@@ -1,0 +1,71 @@
+MOHMMAD AKEEB
+AI/ML | Data Science | Software Engineer
+Ó +91-9541703348          mohammadakeeb786@cukashmir.edu.in       Bengaluru, India   ¯ Linkedin      Github       ® Portfolio
+
+
+EXPERIENCE                                                            TECHNICAL SKILLS
+Underwater AI R&D Intern                                              • Languages: Python , SQL, Java, JavaScript
+IIT Jammu
+                                                                      • AI & GenAI: Hugging Face, TensorFlow,
+ Dec 2025 – Feb 2026              Onsite
+                                                                        PyTorch, RAG, Agentic AI
+• Improved target bearing detection of enemy ships by 13%
+  through AI-driven sonar noise reduction.                            • Data Science: Pandas, NumPy, Matplotlib,
+• Optimized model eﬃciency by reducing FLOPS from 19B to                Seaborn, Plotly, Bokeh
+  5B using SVD and rectangular CNN.                                   • Web & Tools: Git, Docker, Fast APIs, Re-
+• Implemented custom loss function to improve model F1-                 act.js, Flask, Streamlit
+  score.
+                                                                      • Core Concepts: Data Structures, Algo-
+                                                                        rithms, Machine Learning, Deep Learning
+AI / ML Intern
+Ministry of MSME                                                      PROJECTS
+ Nov 2024 – Jan 2025              Onsite
+• Developed and deployed an AI chatbot handling 150 daily             Image caption Generation
+  interactions, automating order processing                           • Python | Tensorﬂow | Scikit-learn | Stremlit
+• Improved response relevance by 32% across 6 AI modules by           • Built an image captioning system using
+  implementing RAG.                                                     VGG16 and LSTM to generate captions from
+• Built a cross-platform mobile AI chatbot using React Native,          images.
+  integrated with Firebase and RunPod-hosted LLM APIs.                • Integrated image preprocessing, tokenization,
+                                                                        and sequence prediction for accurate caption
+                                                                        generation.
+Fog Computing R&D Intern                                              • Developed a Streamlit app with text-to-
+Multicriteria Scheduling for Fog Nodes                                  speech for real-time image captioning.
+ Agu 2024 – Oct 2024              Academic                              [GitHub]
+• Implemented a Fog Computing task scheduling algorithm in
+  Python for heterogeneous fog networks.
+                                                                      Customer Churn Prediction
+                                                                      • Python | Scikit-Learn | FastAPI | Pandas
+• Compared performances with FCFS, SJF, LJF, and PGA (Priority-
+  Aware Genetic Algorithm) across multiple experiments.               • Built a Customer Churn Prediction system
+                                                                        achieving 95.86% accuracy using Random
+• Wrote unit tests using Pytest to ﬁx bugs and improve test
+                                                                        Forest, outperforming Decision Tree baselines.
+  coverage for all modules.
+                                                                      • Engineered a data preprocessing pipeline for
+• Achieved improved performance metrics such as makespan,               21 features using OneHotEncoder, Standard-
+  latency, resource utilization over baseline algorithms.               Scaler, and ColumnTransformer.
+                                                                      • Deployed a production-ready FastAPI appli-
+EDUCATION                                                               cation with dark-mode UI for real-time churn
+                                                                        risk prediction.
+B.Tech. (CSE) - 8.42 CGPA                                                [GitHub]
+Central University of Kashmir
+                                                                      Olympics Data Analysis
+ 2022 – 2026                     Ganderba, Kashmir
+                                                                      • Python | Streamlit | Pandas | Plotly | Seaborn
+                                                                      • Developed an interactive Olympics Data Anal-
+LEADERSHIP EXPERIENCE                                                   ysis Dashboard visualizing 120 years of his-
+                                                                        torical data using Streamlit, facilitating granu-
+President | CodeSquad                                                   lar analysis of athlete performance and coun-
+• Spearheaded technical initiatives and organized coding work-          try achievements.
+  shops for the student community.                                    • Engineered a robust data preprocessing
+• Mentored peers in full-stack development and open-source              pipeline with Pandas to handle missing values
+  best practices.                                                       and duplicates, implementing OneHotEncod-
+                                                                        ing to accurately aggregate medal statistics.
+Lead | AI/ML Club
+                                                                      • Designed advanced visualizations including
+• Directed club activities, including study jams and hands-on           Heatmaps, Scatter Plots, and Distribution
+  model training sessions.                                              Charts using Plotly and Seaborn to identify
+• Guided student teams in building projects using Python, Ten-          correlations between athlete demographics
+  sorFlow, and Scikit-learn.                                            and performance across diﬀerent sports.
+                                                                         [GitHub]
+
